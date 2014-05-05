@@ -1,0 +1,1065 @@
+<html>
+	<head>
+    	<title>IGN Crossword Puzzle</title>
+        <style type="text/css">
+		html, body{
+		margin:0px;padding-left:0px;padding-top:0px;padding-bottom:10px;height:100%;background-image:url(ignback.fw.png);background-position:top;
+		}
+			#puzzle{float:left;margin:10px;}
+			#clues{float:left;margin:10px;}
+			 #div1, #div2, #div3, #div4,#div5, #div6, #div7,#div8, #div9,#div10,#div11, #div12, #div13,#div14,#div15, #div16, #div17,#div18, #div19, #div20, #div21, #div22,#div23,#div24,
+			 #div25, #div26, #div27, #div28, #div29, #div30,
+			 #div31, #div32, #div33, #div34,#div35, #div36, #div37,#div38, #div39,#div40,#div41, #div42, #div43,#div44,#div45, #div46, #div47,#div48, #div49, #div50, #div51, #div52,#div53,#div54
+			{float:left; width:25px; height:25px; margin:0px;padding:2px;border:1px solid black;font-size:12px;font-weight:bold;}
+			#div6, #div7,#div9,#div11, #div13,#div15,#div19,#div21,#div22,#div23,#div29,#div31,#div35,#div36,div39,#div43,#div47,#div48,#div52,#div53,#div54{background-color:black;}
+			#header{
+	background: #000000;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 12px;
+	color: #000000;
+	height: 60px;
+	padding-top: 8px;
+	width: 100%;
+		}
+		
+		#sub_header{
+	background: #FF0000;
+	font-size: 13px;
+	color: #FFFFFF;
+	height: 50px;
+	width: 800px;
+	margin-left: auto;
+	margin-right: auto;
+	border-radius: 5px;
+	padding-top: 5px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+		}
+		
+		#page{
+		width:960px;
+		margin-left:auto;margin-right:auto;padding-top:5px;padding-bottom:5px;
+		}
+		
+		#content_left{
+		width:150px;
+		//height:600px;
+		float:left;
+		margin-bottom:10px;
+		}
+		#content_middle{
+		width:600px
+		//height:600px;
+		float:left;
+		margin-left:30px;
+		margin-bottom:5px;
+		font-family: Arial, Helvetica, sans-serif;
+		font-size: 12px
+		}
+		
+		#content_right{
+		width:800px;
+		float:left;
+		padding-left:10px;
+		margin-left:30px;
+		margin-bottom:10px;
+		font-family: Arial, Helvetica, sans-serif;
+		}
+		#footer{
+		clear:both;
+		bottom:0px;
+		height:40px;
+		left:0px;
+		margin-top:15px;
+		}
+		h1,h3{
+		margin-left:auto;margin:auto; text-align:center;
+		}
+		#heading{
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	background-color: #000000;
+	font-weight: bold;
+	color: #FFFFFF;
+	border-radius: 5px;
+	width: 320px;
+	font-size: 14px;
+	padding: 3px;
+	font-family: Arial, Helvetica, sans-serif;
+		}
+		#ans{
+		margin-top:5px;color:#FFFFFF;
+		}
+		</style>
+        <script type="text/javascript">
+    h = 0;
+    function allowDrop(ev) {
+        ev.preventDefault();
+    }
+    function drag(ev) {
+        ev.dataTransfer.setData("Text", ev.target.id);
+		ev.dataTrasnfer.effectAllowed='copy';
+
+    }
+
+    function drop(ev) {
+            ev.preventDefault();
+            var data = ev.dataTransfer.getData("Text");
+		    ev.dataTransfer.dropEffect='copy';
+            ev.target.appendChild(document.getElementById(data).cloneNode(true));
+ 
+    }
+    function drop1(ev) {
+            ev.preventDefault();
+            var data = ev.dataTransfer.getData("Text");
+		    ev.dataTransfer.dropEffect='move';
+            ev.target.appendChild(document.getElementById(data));
+ 
+    }
+    function answers(){
+	document.getElementById('ans').style.color='#000000';
+	}
+
+		</script>
+        <body>
+        <div id="header">
+        <div id="sub_header">
+        <h1>IGN Crossword Puzzle</h1>
+        <h3>Jason Skillsky</h3>
+        </div>
+        </div>
+        <div id="page">
+        <p id="heading">LAST MINUTE CROSSWORD PUZZLE FTW!</p>
+        <div id="content_left">
+        <p style="background-color:#FF0000;color:#FFFFFF;width:130px;padding:5px;text-align:center;font-size:large;font-family: Arial, Helvetica, sans-serif;border-radius:5px;">Alphabet</p>
+        <p style="font-size: 10px; font-family: Verdana, Geneva, sans-serif; color: #000000"><strong>Drag and drop</strong> the letters into the blank boxes to solve each word</p>
+		<img id="i1" src="a.fw.png" width="30" height="30" draggable="true" ondragstart="drag(event)" />
+        <img id="i2" src="b.fw.png" width="30" height="30" draggable="true" ondragstart="drag(event)" />
+        <img id="i3" src='c.fw.png' width="30" height="30" draggable="true" ondragstart="drag(event)" />
+        <img id="i4" src="d.fw.png" width="30" height="30" draggable="true" ondragstart="drag(event)" /><br />
+        <img id="i5" src="e.fw.png" width="30" height="30" draggable="true" ondragstart="drag(event)" />
+        <img id="i6" src="f.fw.png" width="30" height="30" draggable="true" ondragstart="drag(event)" />
+        <img id="i7" src="g.fw.png" width="30" height="30" draggable="true" ondragstart="drag(event)" />
+        <img id="i8" src="h.fw.png" width="30" height="30" draggable="true" ondragstart="drag(event)" /><br />
+        <img id="i9" src="i.fw.png" width="30" height="30" draggable="true" ondragstart="drag(event)" />
+        <img id="i10" src="j.fw.png" width="30" height="30" draggable="true" ondragstart="drag(event)" />
+        <img id="i11" src="k.fw.png" width="30" height="30" draggable="true" ondragstart="drag(event)" />
+        <img id="i12" src="l.fw.png" width="30" height="30" draggable="true" ondragstart="drag(event)" /><br />
+        <img id="i13" src="m.fw.png" width="30" height="30" draggable="true" ondragstart="drag(event)" />
+        <img id="i14" src="n.fw.png" width="30" height="30" draggable="true" ondragstart="drag(event)" />
+        <img id="i15" src="o.fw.png" width="30" height="30" draggable="true" ondragstart="drag(event)" />
+        <img id="i16" src="p.fw.png" width="30" height="30" draggable="true" ondragstart="drag(event)" /><br />
+        <img id="i17" src="q.fw.png" width="30" height="30" draggable="true" ondragstart="drag(event)" />
+        <img id="i18" src="r.fw.png" width="30" height="30" draggable="true" ondragstart="drag(event)" />
+        <img id="i19" src="s.fw.png" width="30" height="30" draggable="true" ondragstart="drag(event)" />
+        <img id="i20" src="t.fw.png" width="30" height="30" draggable="true" ondragstart="drag(event)" /><br />
+        <img id="i21" src="u.fw.png" width="30" height="30" draggable="true" ondragstart="drag(event)" />
+        <img id="i22" src="v.fw.png" width="30" height="30" draggable="true" ondragstart="drag(event)" />
+        <img id="i23" src="w.fw.png" width="30" height="30" draggable="true" ondragstart="drag(event)" />
+        <img id="i24" src="x.fw.png" width="30" height="30" draggable="true" ondragstart="drag(event)" /><br />
+        <img id="i25" src="y.fw.png" width="30" height="30" draggable="true" ondragstart="drag(event)" />
+        <img id="i26" src="z.fw.png" width="30" height="30" draggable="true" ondragstart="drag(event)" />
+        <p style="font-size:small;;font-family: Arial, Helvetica, sans-serif;color:#000000">Made a <strong>mistake</strong>? <strong>TOO BAD!</strong> Just kidding, click the square to make it blank again. Click the <b>Answers</b> button to see the correct answers</p>
+<p onClick="answers()" style="background-color:#FF0000;color:#FFFFFF;width:130px;padding:5px;text-align:center;font-size:large;;font-family: Arial, Helvetica, sans-serif;border-radius:5px;">Answers</p>
+		</div>
+        <div id="content_middle">
+        <!---1st row---->
+        <div id="puzzle">
+        <div id="div6" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+        <div id="div6" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+        <div id="div6" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+       <div id="div6" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+       <div id="div6" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+        <div id="div6" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div6" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div8" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          	<img src="1.fw.png" id="img1" width="30" height="30" alt="letterF" />
+          </div>
+          <div id="div8" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div8" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div8" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div8" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div8" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div8" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div6" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div6" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div6" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div6" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div6" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div6" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div style="clear:both;"></div>
+           <!---2nd row---->
+        <div id="div6" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div6" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div6" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div6" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div6" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div6" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div6" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+           <div id="div8" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div6" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div6" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div6" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div6" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div6" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div6" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div6" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div6" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div6" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div6" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div6" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div6" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div style="clear:both;"></div>
+           <!----3rd row---->
+        <div id="div6" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div6" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div6" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div6" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div8" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          <img src="2.fw.png" id="img2" width="30" height="30" alt="letterF" />
+          </div>
+          <div id="div6" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div8" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          <img src="3.fw.png" id="img3" width="30" height="30" alt="letterF" />
+          </div>
+          <div id="div8" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div8" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div6" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div6" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div6" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div6" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div6" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div6" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div6" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div6" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div6" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div6" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div6" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div style="clear:both;"></div>
+          <!----4th row---->
+        <div id="div6" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div6" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div6" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div6" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div8" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div6" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div6" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div8" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div6" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div6" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div6" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div6" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div6" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div6" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div6" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div6" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div6" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div6" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div6" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div6" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div style="clear:both;"></div>
+          <!----5th row---->
+       	<div id="div6" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div6" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div6" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div8" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          <img src="4.fw.png" id="img4" width="30" height="30" alt="letterF" />
+          </div>
+          <div id="div8" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div8" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div8" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div8" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div8" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div8" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div8" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          <img src="5.fw.png" id="img5" width="30" height="30" alt="letterF" />
+          </div>
+          <div id="div8" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div8" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div8" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div8" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div6" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div8" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          <img src="6.fw.png" id="img6" width="30" height="30" alt="letterF" />
+          </div>
+          <div id="div8" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div8" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div8" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div style="clear:both;"></div>
+        <!---6th row---->
+        <div id="div6" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div6" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div6" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div6" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div8" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div6" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div6" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div8" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div6" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div6" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div8" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div6" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div6" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div6" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div6" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div6" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div8" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div6" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div6" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div6" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div style="clear:both;"></div>
+         <!---7th row---->
+        <div id="div6" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div6" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div6" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div6" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div8" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div6" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div6" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div8" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div6" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div6" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div8" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div6" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div6" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div6" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div8" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          <img src="7.fw.png" id="img7" width="30" height="30" alt="letterF" />
+          </div>
+          <div id="div6" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div8" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div6" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div6" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div6" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div style="clear:both;"></div>
+           <!----8th row---->
+        <div id="div6" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div6" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div8" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          <img src="8.fw.png" id="img8" width="30" height="30" alt="letterF" />
+          </div>
+          <div id="div6" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div8" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div6" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div6" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div8" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div6" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div8" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          <img src="9.fw.png" id="img9" width="30" height="30" alt="letterF" />
+          </div>
+          <div id="div8" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div8" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div8" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div8" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div8" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div8" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div8" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div6" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div6" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div6" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div style="clear:both;"></div>
+          <!----9th row---->
+        <div id="div8" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+        <img src="10.fw.png" id="img10" width="30" height="30" alt="letterF" />
+          </div>
+          <div id="div8" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div8" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div8" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div8" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div8" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div8" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div8" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div6" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div6" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div8" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div6" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div6" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div6" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div8" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div6" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div8" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div6" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div6" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div6" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div style="clear:both;"></div>
+          <!----10th row---->
+        <div id="div8" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div6" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div8" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div6" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div8" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div6" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div6" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div8" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div6" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div6" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div8" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          <img src="11.fw.png" id="img11" width="30" height="30" alt="letterF" />
+          </div>
+          <div id="div8" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div8" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div6" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div8" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div6" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div8" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div6" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div6" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div6" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div style="clear:both;"></div>
+          <!----11th row---->
+        <div id="div8" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div6" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div8" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div6" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div6" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div6" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div8" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          <img src="12.fw.png" id="img12" width="30" height="30" alt="letterF" />
+          </div>
+          <div id="div6" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div6" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div6" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div8" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div6" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div6" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div6" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div8" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div6" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div6" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div6" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div6" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div6" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div style="clear:both;"></div>
+          <!----12th row---->
+         <div id="div8" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div6" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div8" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div6" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div6" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div6" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div8" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div6" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div6" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div6" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div8" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div6" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div6" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div6" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div8" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div6" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div6" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div6" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div6" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div6" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div style="clear:both;"></div>
+          <!----13th row---->
+        <div id="div8" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div6" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div8" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div6" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div6" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div6" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div8" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          <img src="13.fw.png" id="img13" width="30" height="30" alt="letterF" />
+          </div>
+          <div id="div8" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div8" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div8" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div8" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div8" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div8" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div8" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div8" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div6" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div6" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div6" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div6" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div6" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div style="clear:both;"></div>
+          <!----14th row---->
+        <div id="div8" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div6" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div8" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div6" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div6" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div6" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div8" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div6" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div6" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div6" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div8" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div6" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div6" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div6" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div6" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div6" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div6" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div6" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div6" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div6" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div style="clear:both;"></div>
+          <!----15th row---->
+        <div id="div6" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div6" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div6" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div8" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          <img src="14.fw.png" id="img14" width="30" height="30" alt="letterF" />
+          </div>
+          <div id="div8" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div8" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div8" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div8" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div8" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div8" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div8" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div8" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div8" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div8" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          <img src="15.fw.png" id="img15" width="30" height="30" alt="letterF" />
+          </div>
+          <div id="div6" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div6" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div6" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div6" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div6" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div6" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div style="clear:both;"></div>
+          <!----16th row---->
+        <div id="div6" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div6" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div6" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div8" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div6" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div6" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div8" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div6" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div6" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div6" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div8" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div6" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div6" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div8" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div6" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div6" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div6" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div6" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div6" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div6" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div style="clear:both;"></div>
+          <!----17th row---->
+        <div id="div6" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div6" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div6" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div8" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div6" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div6" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div8" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div6" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div6" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div6" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div6" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div6" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div6" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div8" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div6" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div6" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div6" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div6" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div6" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div6" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div style="clear:both;"></div>
+          <!----18th row---->
+        <div id="div6" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div6" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div6" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div8" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div6" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div6" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div6" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div6" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div6" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div6" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div6" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div6" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div6" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div8" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div6" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div6" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div6" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div6" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div6" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div6" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div style="clear:both;"></div>
+          <!----19th row---->
+        <div id="div6" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div6" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div6" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div6" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div6" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div6" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div6" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div6" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div6" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div6" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div8" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          <img src="16.fw.png" id="img16" width="30" height="30" alt="letterF" />
+          </div>
+          <div id="div8" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div8" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div8" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div8" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div6" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div6" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div6" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div6" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div6" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div style="clear:both;"></div>
+          <!----20th row---->
+        <div id="div6" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div6" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div6" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div6" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div6" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div6" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div6" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div6" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div6" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div6" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div6" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div6" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div6" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div8" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div6" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div6" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div6" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div6" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div6" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div id="div6" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+          </div>
+          <div style="clear:both;"></div>
+          </div>
+           <div style="clear:both;"></div> 
+           <p id="ans">
+           <strong>Across:</strong> 1. Pokemon  3. LOL  4. San Franciso  6. HTML  9.Bioshock  10. Triforce  11. IGN  13. Lightning<br>  14. Demons Souls  16. Mario<br />
+          <strong>Down:</strong> 1. Programmer  5. Deadpool  5.Civilization  6. Hacker  7. Modding  8. Picasso  10. Tetris  12. Fallout<br>14. Duck  15. Skyrim
+        </div>
+        <div id="content_right">
+        <p style="background-color:#FF0000;color:#FFFFFF;width:100px;padding:5px;border-radius:5px;text-align:center;"><strong>Clues</strong></p>
+        <p><strong>Across</strong></p>
+        <table>
+        <tr><td>1.</td><td>The best selling RPG series of all time.</td></tr>
+        <tr><td>3.</td><td>A free to play game that is also a main e-sport event.</td></tr>
+        <tr><td>4.</td><td>Gold in Peace, Iron in War. It's interesting for a city motto.</td></tr>
+        <tr><td>6.</td><td>A language most common for making building blocks of all websites.</td></tr>
+        <tr><td>9.</td><td><i>"We all make choices, but in the end our choices make us."</i> What game is this quote from?.</td></tr>
+        <tr><td>10.</td><td>Power, Wisdom, Courage.</td></tr>
+        <tr><td>11.</td><td>Pretty sure most of the people looking at this works here...</td></tr>
+        <tr><td>13.</td><td><i>"It flashes bright, then fades away. It can't protect; it only destroys."</i> Which character says this quote?</td></tr>
+        <tr><td>14.</td><td>This crow makes its first appearance in this game, asking for 'sparkly, twinkly...' stuff, then making another comeback in it's spiritual successor asking for 'warm and soft...'. What was the game that she first appeared in?</td></tr>
+        <tr><td>16.</td><td>It's a me,______!</td></tr>
+        </table>
+        <p><strong>Down</strong></p>
+        <table>
+        <tr><td>1.</td><td>A person who writes computer software.</td></tr>
+        <tr><td>2.</td><td>The Merc with a Mouth.</td></tr>
+        <tr><td>5.</td><td>The game's objective is to "Build an empire to stand the test of time".</td></tr>
+        <tr><td>6.</td><td>One who enjoys the intellectual challenge of creatively overcoming and circumventing limitations of programming systems and who tries to extend their capabilities.</td></tr>
+        <tr><td>7.</td><td>The act of enhancing hardware, software, or virtually anything else, to perform a function not originally conceived or intended by the designer.</td></tr>
+        <tr><td>8.</td><td><i>"A good artist copies, a great artist steals..."</i> Which famous artist said this quote?</td></tr>
+        <tr><td>10.</td><td>The highest selling game of all time.</td></tr>
+        <tr><td>12.</td><td><i>"War. War never changes."</i> What game series is this quote from?</td></tr>
+        <tr><td>14.</td><td>I found this one to be the most hilarious and random out of all the words on the IGN crossword list.</td></tr>
+        <tr><td>15.</td><td><i>"In their tongue, he is Dovahkiin - Dragonborn!"</i> I also have over 50 mods on one save file in this game.</td></tr>
+        </table>
+        </div>
+        </div>
+        <div style="clear:both;"></div>
+        <div id="footer">
+        </div>
+        </body>
+    </head>
+</html>
