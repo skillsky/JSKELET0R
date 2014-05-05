@@ -1,0 +1,49 @@
+<html>
+    <head>
+    <title>IGN Questions 4-6</title>
+    </head>
+    <style type="text/css">
+    html *
+{
+   font-size: 1em !important;
+   color: #000 !important;
+   font-family: Arial !important;
+   width:1000px !important;
+   margin-left: auto !important;
+   margin-right: auto !important;
+   
+}
+	</style>
+	<body>
+        <p><center><tr><td><strong>A1.</strong></td></tr> How many cars cross the Bay Bridge daily?</center></p>
+        <p><center>According to the CA.gov, roughly 270,000 cars cross the Bay Bridge daily, which means roughly half or <strong>135,000 cars</strong> are coming from Oakland into San Francisco.</center></p>
+        <br>
+        <p><center><tr><td><strong>A2.</strong></td></tr> How many people does this translate to?</center></p>
+        <p><center>If <strong>135,000 cars</strong> are crossing into San Francisco from Oakland, lets say that the average carpooling car has at least 2 people, so I would think that roughly <strong>270,000 people</strong> are crossing into San Francisco from Oakland.</center></p>
+        <br>
+         <p><center><tr><td><strong>A3.</strong></td></tr> How many gamers make the crossing?</center></p>
+          <p><center>If <strong>270,000 people</strong> are coming into San Francisco from Oakland, and according to the ESA 2013 Survey, <strong>about 58%</strong> of all US citizens are gamers. So if you take 58% of 270,000, then <strong>roughly 170,886 people</strong> coming into San Francisco are gamers.</center></p>
+         <br>
+         <br>
+         <p><center><tr><td><strong>B.</strong></td></tr> Front End</center></p>
+         <p><center><tr><td><strong>C.</strong></td></tr> Back End</center></p>
+         <p><center><tr><td><strong>D.</strong></td></tr> Database</center></p>
+         <p><center><img src="shrugs.png"></center></p>
+         <p><center><i>Sorry, I don't really know how to do all that just yet...(Trying to be honest here...)</i></center></p>
+         <br>
+          <p><center><tr><td><strong>E.</strong></td></tr> Bonus Level</center></p>
+           <p><center><tr><td><strong>E1.</strong></td></tr> A driver has gained access to a <a href="http://www.ign.com/articles/2014/03/06/watch-dogs-release-date-leaked-in-trailer">Watch Dogs</a>
+    type device that allows them control over the metering lights. Assuming the driver wishes to maintain his 50mph cruising speed throughout, and assuming we want to allow
+    access to the lights, describe all the assumptions that should be made. For example, assume the lights are wi-fi and therefore have infinite device range.</center></p>
+    	<p><center></center></p>
+        <br>
+        <p><center><tr><td><strong>6.</strong></td></tr> If you feel neither question above will show off your skills and what makes you a great fit for IGN, this is your question to shine. Design and buiild something you feel is a fair representation of your talents and contributions, and submit it.</center></p>
+        <p><center>I may not know so much about complex coding, but I included one of my mods for Civilization 5 (which by the way is super OP, so don't be shocked if you wind up with a bunch of happiness right away; it's also a Final Fantasy XIII Mod.) and a mod for FTL: Faster Than Light. I really do hope all of you will consider me for taking this six week internship, as I wish to expand my knowledge of coding while get the real world experience that I want!</center></p>
+          <style type="text/css">
+		  html
+		  {
+          margin-bottom:100px;
+		  }
+		  </style>
+    </body>
+</html>
